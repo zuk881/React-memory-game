@@ -5,5 +5,10 @@ html, body, #root {
   height: 100%;
   background-color: papayawhip;
   color: white;
-  
+  min-height: calc(100vh - 70px);
+  background: url("../src/components/images/splat-1.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
