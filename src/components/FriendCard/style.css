@@ -1,0 +1,20 @@
+
+img {
+  height: 200px;
+  width: 100px;
+  margin: 20px;
+  border: 3px solid gray;
+  border-radius: 8px;
+  background-color: lightskyblue;
+  float: right;
+  margin-right: 50px;
+  object-fit: cover;
+  padding: 0;
+}
+
+.card-1:hover {
+  box-shadow: 2px 2px 5px red;
+  transform: rotate(180deg);
+  transition: .2s all;
+  border: 3px solid yellow;
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Agent 3",
+    "image": "https://i.imgur.com/CaI9lLt.png"
+  },
+  {
+    "id": 2,
+    "name": "Agent 4",
+    "image": "https://i.imgur.com/HMORuoz.png"
+  },
+  {
+    "id": 3,
+    "name": "Agent 8",
+    "image": "https://i.imgur.com/ggvR7Dq.png"
+  },
+  {
+    "id": 4,
+    "name": "Marina",
+    "image": "https://i.imgur.com/puxscxN.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Octoling",
+    "image": "https://i.imgur.com/v5NDsab.png"
+  },
+  {
+    "id": 6,
+    "name": "Grizz",
+    "image": "https://i.imgur.com/LQqWf3m.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Captain Cuddlefish",
+    "image": "https://i.imgur.com/BzVAyJ9.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Dj Octavio",
+    "image": "https://i.imgur.com/qn5snfn.png"
+  },
+  {
+    "id": 9,
+    "name": "Cucumber",
+    "image": "https://i.imgur.com/7ShEX17.png"
+  },
+  {
+    "id": 10,
+    "name": "Pearl",
+    "image": "https://i.imgur.com/GUCif10.png"
+  },
+  {
+    "id": 11,
+    "name": "Marie",
+    "image": "https://i.imgur.com/lbTqrRq.png"
+  },
+  {
+    "id": 12,
+    "name": "Callie",
+    "image": "https://i.imgur.com/P5yvGtK.png"
+  }
+]
