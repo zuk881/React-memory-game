@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 
-const Title = props => {
+const Jumbotron = props => {
   return (
 
     <div className="jumbotron text-center">
@@ -22,4 +22,4 @@ const Title = props => {
 }
 
 
-export default Title;
+export default Jumbotron;

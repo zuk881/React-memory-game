@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import FriendCard from "./components/FriendCard";
-import Title from "./components/Title";
+import Jumbotron from "./components/Jumbotron";
 import friends from "./friends.json";
 
 const shuffleArray = (array) => {
@@ -103,7 +103,7 @@ class App extends Component {
   render() {
     return (
       <div className="container"> 
-        <Title topScore={this.state.topScore} currentScore={this.state.currentScore} result={this.state.result}/>
+        <Jumbotron topScore={this.state.topScore} currentScore={this.state.currentScore} result={this.state.result}/>
         {this.state.friends.map(friend => (
           <FriendCard
             clickedFriend={this.clickedFriend}
