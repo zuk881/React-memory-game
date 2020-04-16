@@ -1,9 +1,8 @@
 
-html, body, #root {
+ body, #root {
   padding: 0;
   margin: 0;
   height: 100%;
-  background-color: papayawhip;
   color: white;
   min-height: calc(100vh - 70px);
   background: url("../src/components/images/splat-1.jpg") no-repeat center center fixed; 
@@ -11,4 +10,5 @@ html, body, #root {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  opacity: .96;
 }

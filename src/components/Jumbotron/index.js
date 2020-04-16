@@ -5,8 +5,8 @@ const Jumbotron = props => {
   return (
 
     <div className="jumbotron text-center">
-      <h1 className="display-4 text-center">Clicky Game</h1>
-      <p className="lead text-center">Click on an image to earn points, but don't click on any more than once!</p>
+      <h1 className="display-4 text-center title">Clicky Game</h1>
+      <p className="lead text-center">Click on an image to earn points, but only once!</p>
       <hr className="my-4" />
       <p className="result">{props.result}</p>
       <hr className="my-4" />
