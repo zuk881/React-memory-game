@@ -3,19 +3,19 @@ import FriendCard from "./components/FriendCard";
 import Jumbotron from "./components/Jumbotron";
 import friends from "./friends.json";
 
-const shuffleArray = (array) => {
- 
+const shuffle = (array) => {
+
   let lengthOfArray = array.length;
   // While there are elements in the array
   while (lengthOfArray > 0) {
-      // Pick a random index
-      let index = Math.floor(Math.random() * lengthOfArray);
-      // Decrease length by 1
-      lengthOfArray--;
-      // And swap the last element with it
-      let temp = array[lengthOfArray];
-      array[lengthOfArray] = array[index];
-      array[index] = temp;
+    // Pick a random index
+    let index = Math.floor(Math.random() * lengthOfArray);
+    // Decrease length by 1
+    lengthOfArray--;
+    // And swap the last element with it
+    let temp = array[lengthOfArray];
+    array[lengthOfArray] = array[index];
+    array[index] = temp;
   }
   return array;
 };
@@ -23,11 +23,11 @@ const shuffleArray = (array) => {
 class App extends Component {
 
   // When a image gets clicked,
-  // increase points and add the id of element to array.
+  // increase points and add the id of element to clicked[].
   clickedFriend = (id) => {
     console.log(`Picture clicked with id: ${id}`);
-    if(!this.state.clicked.includes(id)){
-      this.pointIncrease();
+    if (!this.state.clicked.includes(id)) {
+      this.winCheck();
       this.state.clicked.push(id);
       this.setState({
         gameOver: false
@@ -37,9 +37,9 @@ class App extends Component {
     }
   };
 
-    // When the user clicks an image, increment by 1
+  // Function for incrementing score by 1, tracking topScore
   // and check if the user has won
-  pointIncrease = () => {
+  winCheck = () => {
     let score = this.state.currentScore + 1;
     console.log(`the score is ${score}`);
     if (score === this.state.friends.length) {
@@ -55,7 +55,7 @@ class App extends Component {
       this.setState({
         topScore: score,
         currentScore: score,
-        result: "Correct! New high score!",
+        result: "Correct!",
       });
     } else {
       this.setState({
@@ -65,27 +65,26 @@ class App extends Component {
     }
     this.resetFriendArray();
   }
-  
-  // reset the game when the user chooses a duplicate
+
+  // function to reset the game when the user chooses a duplicate
   resetGame = () => {
     this.setState({
       points: 0,
-      currentScore:0,
+      currentScore: 0,
       topScore: this.state.topScore,
       result: "You Lose! click a card to start over",
       gameOver: true,
       clicked: [],
       friends,
     });
-    console.log('Game over? ', this.state.gameOver);
     this.resetFriendArray();
   }
 
-  
-  // set the array to a new scrambled version using shuffle algorithm
+
+  // Function to set the array to a new version using shuffle algorithm
   resetFriendArray = () => {
-    let newArray = shuffleArray(friends);
-    this.setState({friends: newArray})
+    let newArray = shuffle(friends);
+    this.setState({ friends: newArray })
   }
 
 
@@ -102,19 +101,19 @@ class App extends Component {
   // Map over this.state.friends and render a FriendCard component for each friend object
   render() {
     return (
-      <div className="container"> 
-        <Jumbotron topScore={this.state.topScore} currentScore={this.state.currentScore} result={this.state.result}/>
-       <div className="row">
-        {this.state.friends.map(friend => (
-          <FriendCard
-            clickedFriend={this.clickedFriend}
-            id={friend.id}
-            key={friend.id}
-            image={friend.image}
-          />
-        ))}
+      <div className="container">
+        <Jumbotron topScore={this.state.topScore} currentScore={this.state.currentScore} result={this.state.result} />
+        <div className="row">
+          {this.state.friends.map(friend => (
+            <FriendCard
+              clickedFriend={this.clickedFriend}
+              id={friend.id}
+              key={friend.id}
+              image={friend.image}
+            />
+          ))}
         </div>
-      </div> 
+      </div>
     );
   }
 }
