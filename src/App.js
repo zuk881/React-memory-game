@@ -4,7 +4,7 @@ import Jumbotron from "./components/Jumbotron";
 import friends from "./friends.json";
 
 const shuffleArray = (array) => {
-  console.log(array)
+ 
   let lengthOfArray = array.length;
   // While there are elements in the array
   while (lengthOfArray > 0) {
@@ -104,6 +104,7 @@ class App extends Component {
     return (
       <div className="container"> 
         <Jumbotron topScore={this.state.topScore} currentScore={this.state.currentScore} result={this.state.result}/>
+       <div className="row">
         {this.state.friends.map(friend => (
           <FriendCard
             clickedFriend={this.clickedFriend}
@@ -112,6 +113,7 @@ class App extends Component {
             image={friend.image}
           />
         ))}
+        </div>
       </div> 
     );
   }

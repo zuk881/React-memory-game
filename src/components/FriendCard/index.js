@@ -3,8 +3,8 @@ import "./style.css";
 
 function FriendCard(props) {
   return (
-    <div className="image" onClick={() => props.clickedFriend(props.id)}>
-      <img className="col-2 card-1" alt={props.name} src={props.image} />
+    <div className="image col-2" onClick={() => props.clickedFriend(props.id)}>
+      <img className="card-1" alt={props.name} src={props.image} />
     </div>
   );
 }
