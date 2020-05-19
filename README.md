@@ -5,4 +5,4 @@ Memory game built with React and Bootstrap 4!
 ### If you click on unique images it will let you know you were correct and keep track of
 ### the number of correct clicks and let you know you won if you get all 12 correct! and then reset for another round.
 
-![project pic]("https://i.imgur.com/TZreltD.png")
+![project]("https://i.imgur.com/TZreltD.png")
