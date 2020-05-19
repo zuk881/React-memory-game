@@ -4,7 +4,7 @@ React memory game that challenges user to only click each image once!
 [Try it here!](https://zuk881.github.io/GifTastic/
 )
 
-![game pic]("https://i.imgur.com/TZreltD.png")
+![catGif](https://i.imgur.com/hMFTljV.jpg)
 
 ### Using
 Click on each image only once.  If you click on an image more than once, it will announce you lose and
