@@ -14,14 +14,14 @@ You win by clicking on only unique images 12 times.
 
 ### Installing
 To run the application locally, you will need to clone the repository to your local machine.
-#### HTTPS:
-##### https://github.com/zuk881/React-memory-game.git
-#### SSH:
-##### git@github.com:zuk881/React-memory-game.git
-#### Using
-##### In the terminal run:
+### HTTPS:
+#### https://github.com/zuk881/React-memory-game.git
+### SSH:
+#### git@github.com:zuk881/React-memory-game.git
+## Using
+### In the terminal run:
 npm install 
-##### You can then run the app locally by running: 
+### You can then run the app locally by running: 
 npm start to run
 
 ### Built With
