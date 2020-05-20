@@ -4,6 +4,7 @@ If you click on an image more than once, it will announce you lose and
 restart game.
 If you click on unique images it will let you know you were correct and keep track of the number of correct choices.
 You win by clicking on only unique images 12 times.
+
 [Try it here!](https://zuk881.github.io/GifTastic/
 )
 
