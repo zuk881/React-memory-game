@@ -17,9 +17,9 @@ To run the application locally, you will need to clone the repository to your lo
 #### git@github.com:zuk881/React-memory-game.git
 ## Using
 ### In the terminal run:
-npm install 
+*$ npm install* 
 ### You can then run the app locally by running: 
-npm start to run
+*$ npm start*
 
 ## Built With
 * React
